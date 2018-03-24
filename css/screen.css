@@ -1,0 +1,29 @@
+@media screen and (max-width: 1080px) {
+	
+	#container {
+		width: 100%;
+		margin: auto;
+	}
+	.left {
+		clear: both;
+		width: auto;
+		float: none;
+	}
+	.right {
+		width: 98%;
+		float: right;
+	}
+	.copyr { display: inherit; }
+	.copy { display: none; }
+}
+@media screen and (max-width: 780px) {
+	.left {
+		width: auto;
+		float: none;
+	}
+	.right {
+		width: 95%;
+		float: right;
+	}
+
+}

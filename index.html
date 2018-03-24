@@ -1,0 +1,85 @@
+<!-- بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Basic -->
+	<title>Dimas Firmansyah</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Dimas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />  
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/screen.css"/>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div class="main">
+			<div class="left">
+				<div class="card animated fadeInDown">
+					<h1><font style="color: #3FC380;">dimas</font> f</h1>
+					<h3>seekers of science</h3>
+					<img src="img/avatar.png">
+				</div>
+				<div class="nav animated fadeInLeft">
+					<li><a class="klik_menu" id="home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+					<li><a class="klik_menu" id="contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+					<li><a class="klik_menu" id="social"><i class="fa fa-facebook-square" aria-hidden="true"></i> Social</a></li>
+				</div>
+				<div class="copy animated fadeInUp">
+					<p>&copy; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Dimas Firmansyah</p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="title animated fadeInRight">
+					<h1><font style="color: #3FC380;">Welcome To</font> My Own Website</h1>
+				</div>
+				<div class="content animated fadeInUp">
+					<h2>Hello, I am <font style="background: #3FC380; padding: 1%;">Dimas Firmansyah</font></h2>
+					<h4>seekers of science</h4>
+					<br><br><br>
+					<h2>Personal Info</h2>
+					<table>
+						<tr><th width="80px" style="background: #3FC380;">Name</th><th  style="background: #2C3E50; color: #fff;">Dimas Firmansyah</th></tr>
+						<tr><th width="80px" style="background: #3FC380;">Email</th><th width="250px" style="background: #2C3E50; color: #fff;">pm@dimasfirmansyah.web.id</th></tr>
+						<tr><th width="80px" style="background: #3FC380;">Location</th><th style="background: #2C3E50; color: #fff;">Batam City</th></tr>
+					</table>
+				</div>
+				<div class="copyr animated fadeInUp">
+					<p>&copy; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Dimas Firmansyah</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.klik_menu').click(function(){
+			var menu = $(this).attr('id');
+			if(menu == "home"){
+				$('.content').load('home.html');						
+			}else if(menu == "contact"){
+				$('.content').load('contact.html');						
+			}else if(menu == "social"){
+				$('.content').load('social.html');						
+			}
+		});					
+ 
+	});
+</script>
+</script>
+</html>

@@ -1,0 +1,93 @@
+/*BASIC*/
+html { margin:0; padding: 0; }
+body {
+	background: url(../img/main-bg.jpg) center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+li { list-style: none; }
+a { color: #fff; text-decoration: unset; }
+/*MAIN*/
+#container {
+	font-family: "Roboto Condensed", sans-serif;
+	max-width: 1080px;
+	margin: 20px auto;
+	margin-left: 20%;
+	overflow: hidden;
+	padding: 10px;
+}
+.left{
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+.left img{
+	max-width: 100%;
+	height: auto;
+}
+.right{
+	width: 500px;
+	padding: 10px;
+	margin: 10px;
+	margin-left: -2%;
+	float: left;
+}
+
+/*STYLE*/
+.card {
+	background: #2C3E50;
+	text-align: center;
+	color: #fff;
+	padding: 2%;
+	padding-bottom: 10%;
+}
+.card h1 { text-transform: uppercase; font-size: 250%; }
+.card h3 { text-transform: lowercase; font-size: 100%; margin-top: 0; }
+.card img { 
+	height: 60%; 
+	width: 60%;
+	border-radius: 150px;
+	border: 8px solid #3FC380;
+	background: #fff;
+}
+.nav {
+	background: #3FC380;
+	margin-top: 5%;
+	font-size: 150%;
+}
+.nav a:hover {
+	background: #2C3E50 !important;
+	color: #3FC380;
+	transition: 0.8s;
+}
+.copy {
+	background: #2C3E50;
+	text-align: center;
+	padding: 3%;
+	color: #fff;
+	margin-top: 5%;
+}
+.copy p { margin-top: 6%; }
+.title { 
+	background: #2C3E50; 
+	color: #FFF;
+	padding: 5%;
+}
+.content {
+	background: url(../img/vector.png) no-repeat bottom right #fff;
+	padding: 2%;
+	margin-top: 2%;
+	height: 356px;	
+}
+.content th { padding: 2%; margin: 2%; }
+.socialmedia a:hover{ color: #3FC380 }
+.copyr {
+	background: #2C3E50;
+	text-align: center;
+	padding: 1%;
+	color: #fff;
+	margin-top: 5%;
+	display: none;
+}
+.copyr p { margin-top: 3%; }
