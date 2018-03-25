@@ -19,11 +19,31 @@ body {
 	overflow: hidden;
 }
 .container .avatar img { height: 150px; }
-.container .identity h3 { margin-top: -30px; }
+.container .avatar img:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: rubberBand;
+  	animation-name: rubberBand;
+}
+.container .identity h1, .container .identity h3 { cursor: context-menu; }
+.container .identity h1:hover, .container .identity h3:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: swing;
+  	animation-name: swing;
+}
+.container .identity h3 { margin-top: -20px; }
 .container .quote {
 	margin-top: 40px;
 	color: #c0392b;
 	margin-bottom: 40px;
+	cursor: context-menu;
+}
+.container .quote p:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: jello;
+  	animation-name: jello;
 }
 .container .social {
 	display: flex;
@@ -37,14 +57,26 @@ body {
 }
 .container .social a:hover {
 	color: #c0392b;
-	transform: rotate(180deg);
+}
+.container .social .mysocial:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: bounce;
+  	animation-name: bounce;
+}
+
+.container {
+	-webkit-animation-delay: 2.2s;
+	-moz-animation-delay: 2.2s;
+	-ms-animation-delay: 2.2s;
+	-o-animation-delay: 2.2s; 
 }
 
 .avatar, .identity, .quote, .social {
-	-webkit-animation-delay: .2s;
-	-moz-animation-delay: .2s;
-	-ms-animation-delay: .2s;
-	-o-animation-delay: .2s; 
+	-webkit-animation-delay: 2.4s;
+	-moz-animation-delay: 2.4s;
+	-ms-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s; 
 } 
 
 
