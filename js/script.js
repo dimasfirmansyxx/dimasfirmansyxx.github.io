@@ -6,10 +6,10 @@ function sourcecode(e) {
 }
 document.onkeydown = sourcecode;
 
-
 $(document).ready(function(){
-	$("#loading").fadeOut();
+	$("#loading").delay(2000).fadeOut();
 })
+
 
 var quote = new Array(5);
 quote[0] = "The programmers of tomorrow are the wizards of the future. You're going to look like you have magic powers compared to everybody else. <br> -Gaben";
