@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "Roboto Condensed";
+	src: url('../font/RobotoCondensed-Regular.ttf');
+}
+body {
+	font-family: Roboto Condensed;
+	background: #364b71;
+}
+.container {
+	background: #fff;
+	width: 380px;
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+	color: #364b71;
+	box-shadow: 5px 5px 10px #24334e;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	overflow: hidden;
+}
+.container .avatar img { height: 150px; }
+.container .avatar img:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: rubberBand;
+  	animation-name: rubberBand;
+}
+.container .identity h1, .container .identity h3 { cursor: context-menu; }
+.container .identity h1:hover, .container .identity h3:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: swing;
+  	animation-name: swing;
+}
+.container .identity h3 { margin-top: -20px; }
+.container .quote {
+	margin-top: 40px;
+	color: #c0392b;
+	margin-bottom: 40px;
+	cursor: context-menu;
+}
+.container .quote p:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: jello;
+  	animation-name: jello;
+}
+.container .social {
+	display: flex;
+	justify-content: space-around;
+}
+.container .social a {
+	color: #364b71;
+	font-size: 40px;
+	text-decoration: none;
+	transition: .4s;
+}
+.container .social a:hover {
+	color: #c0392b;
+}
+.container .social .mysocial:hover {
+	-webkit-animation-duration: 0.75s;
+  	animation-duration: 0.75s;
+  	-webkit-animation-name: bounce;
+  	animation-name: bounce;
+}
+
+.container {
+	-webkit-animation-delay: 2.2s;
+	-moz-animation-delay: 2.2s;
+	-ms-animation-delay: 2.2s;
+	-o-animation-delay: 2.2s; 
+}
+
+.avatar, .identity, .quote, .social {
+	-webkit-animation-delay: 2.4s;
+	-moz-animation-delay: 2.4s;
+	-ms-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s; 
+} 
+
+
+/*Loading*/
+#loading {
+	background: #fff;
+	text-align: center;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+}

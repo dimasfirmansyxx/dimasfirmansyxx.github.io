@@ -1,0 +1,150 @@
+body {
+	margin-top: 40px;
+}
+.content-container {
+	padding: 60px 0 150px 0;
+	min-height: 700px;
+}
+.content-container h1 {
+	font-size: 30px;
+	text-align: center;
+}
+.content-container p {
+	text-align: justify;
+}
+
+.portofolio {
+	background: url('../img/portofolio-bg.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+}
+.portofolio .card {
+	margin-bottom: 80px;
+}
+
+.skill {
+	background: #e9ecef;
+	min-height: 300px !important;
+}
+
+.contact textarea {
+	resize: none;
+}
+.contact button {
+	width: 100%;
+}
+
+footer {
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+footer a {
+	color: #fff;
+	font-size: 20px;
+}
+footer a:hover {
+	color: #ddd;
+}
+
+
+
+
+.card {
+	width: 300px;
+	height: 130px;
+	overflow: hidden;
+}
+
+.card span {
+	display: block;
+	width: 300px;
+	height: 130px;
+	color: #fff;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 130px;
+	opacity: 0;
+	transition: .3s;
+}
+
+.card span:hover {
+	opacity: 1;
+}
+
+
+.overlay {
+	position: fixed;
+	background: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: .3s;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	text-align: center;
+	padding: 100px
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.8);
+}
+.overlay img {
+	max-height: 100%;
+}
+.overlay:target img {
+	animation: portofolioAnim .5s;
+}
+.overlay .btn-close {
+	top: 50px;
+	right: 200px;
+	position: absolute;
+	opacity: 0;
+	transition: 1s;
+}
+.overlay:target .btn-close {
+	opacity: 1;
+}
+
+.loading {
+	position: fixed;
+	background: #fff;
+	z-index: 9999;
+	transition: .3s;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	text-align: center;
+	padding: 100px;
+	width: auto;
+	height: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.loading h1{ font-size: 20px; }
+.loading img{ 
+	height: 300px;
+	margin-top: -10px;
+}
+
+
+@keyframes portofolioAnim {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
